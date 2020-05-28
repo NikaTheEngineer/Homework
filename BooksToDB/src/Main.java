@@ -14,7 +14,7 @@ public class Main {
     public static void main(String[] args) {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/DB", "root", "nikolozo4");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/DB", "root", "...");
             while(!end) run();
         } catch (Exception e) {
             e.printStackTrace();
